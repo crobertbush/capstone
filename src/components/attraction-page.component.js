@@ -5,12 +5,14 @@ import { name } from 'ejs';
 //Attractions
 const Attraction = (props)=> {
   return (
-    <div className="row">
-      <div className="container mb-4 col-md-12 col-lg-6" style={cardStyles.container}>
-        <div className="card-title" style={cardStyles.title}>{props.attraction.name}</div>
-        <img className="card-img-top" style={cardStyles.image} src={props.attraction.imageUrl} alt="" />
-        <p className="card-text">{props.attraction.description}</p>
-        <a className="btn btn-primary" href={props.attraction.website}>Visit Website</a>
+    <div className="container-fluid" style={cardStyles.div}>
+      <div className="row justify-content-center d-flex flex-wrap">
+        <div className="card mb-4" style={cardStyles.container}>
+          <img className="card-img-top" style={cardStyles.image} src={props.attraction.imageUrl} alt="img" />
+          <div className="card-title" style={cardStyles.title}>{props.attraction.name}</div>
+          <p className="card-text">{props.attraction.description}</p>
+          <a className="btn btn-primary" href={props.attraction.website}>Visit Website</a>
+        </div>
       </div>
     </div>
   )
@@ -20,7 +22,8 @@ const Attraction = (props)=> {
 const cardStyles = {
 
 container: {
-  maxWidth: "40em"
+  maxWidth: "40em",
+  border: "transparent"
 },
 
 image: {
@@ -31,9 +34,12 @@ image: {
 title: {
   fontSize: "2em",
   textAlign: "center"
+},
+
+div: {
+  display: "block"
 }
 };
-
 
 
 export default class Attractions extends Component {

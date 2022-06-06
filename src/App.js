@@ -12,7 +12,6 @@ function App() {
   return (
     <Router>
       <Navbar />
-        <br/>
         <Route path="/" exact component={LandingPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/attractions" component={Attractions} />

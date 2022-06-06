@@ -4,8 +4,11 @@ import React, { Component } from 'react';
 export default class ContactPage extends Component {
   render() {
     return (
+      
   <div className="m-5">       
-
+       
+        <h1 style={styles.title}>Contact Us</h1>
+      
       <form>
       <div className="form-group">
       <label> Your Email Address</label>
@@ -40,5 +43,10 @@ export default class ContactPage extends Component {
 const styles = {
   number: {
     textAlign: "center",
+    marginTop: "1em"
+  },
+  title: {
+    textAlign: "center",
+    marginBottom: "1em"
   }
 }
