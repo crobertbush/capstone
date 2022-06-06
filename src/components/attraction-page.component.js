@@ -3,80 +3,92 @@ import axios from 'axios';
 import { name } from 'ejs';
 
 //Attractions
-const Attraction = (props)=> {
+const Attraction = (props) => {
   return (
-    <div className="container-fluid" style={cardStyles.div}>
-      <div className="row justify-content-center d-flex flex-wrap">
-        <div className="card mb-4" style={cardStyles.container}>
+    
+      
+        <div className="card mb-4 mt-4 m-auto" style={cardStyles.container}>
           <img className="card-img-top" style={cardStyles.image} src={props.attraction.imageUrl} alt="img" />
           <div className="card-title" style={cardStyles.title}>{props.attraction.name}</div>
-          <p className="card-text">{props.attraction.description}</p>
-          <a className="btn btn-primary" href={props.attraction.website}>Visit Website</a>
+          <p className="card-body" style={cardStyles.p}>{props.attraction.description}</p>
+          <a className="btn btn-info" href={props.attraction.website}>Visit Website</a>
         </div>
-      </div>
-    </div>
+      
+    
   )
 }
 
 //Card Styles
 const cardStyles = {
 
-container: {
-  maxWidth: "40em",
-  border: "transparent"
-},
+  container: {
+    border: "transparent",
+    maxWidth: "40em",
+    backgroundColor: "white",
+    border: "1px",
+    borderColor: "black",
+    boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)"
+  },
 
-image: {
-  width: "100%",
-  height: "400px",
-},
+  p: {
+    backgroundColor: "white",
+    textAlign: "center",
+    alignItems: "center"
+  },
 
-title: {
-  fontSize: "2em",
-  textAlign: "center"
-},
+  image: {
+    width: "100%",
+    height: "500px"
+  },
 
-div: {
-  display: "block"
-}
+  title: {
+    fontSize: "2em",
+    textAlign: "center"
+  }
+
 };
 
 
 export default class Attractions extends Component {
-  constructor(props) {  
+  constructor(props) {
     super(props)
-   this.state = {
-     attractions: [],
-     loading: true
-  };  
+    this.state = {
+      attractions: [],
+      loading: true
+    };
   }
 
   componentDidMount() {
-      axios.get('http://localhost:5000/attractions')
+    axios.get('http://localhost:5000/attractions')
       .then(response => {
         this.setState({
           attractions: response.data,
           loading: false
         })
         console.log('heres the list of attractions')
-      }).catch((error)=> {
+      }).catch((error) => {
         console.log(error)
       });
   }
 
-  attractionList(){
+  attractionList() {
     return this.state.attractions.map((currentAttraction) => {
-      return <Attraction attraction={currentAttraction} key={currentAttraction._id}/>
+      return <Attraction attraction={currentAttraction} key={currentAttraction._id} />
     })
   }
 
   render() {
     return (
-      this.state.loading === false ? 
-        <div className="">{this.attractionList()}</div>
-       : 
+      this.state.loading === false ?
+        <div className="container-fluid">
+          <div className="row">
+
+            <div className="d-flex flex-wrap">{this.attractionList()}</div>
+          </div>
+        </div>
+        :
         <h1>Loading....</h1>
-      
+
     );
   }
 }

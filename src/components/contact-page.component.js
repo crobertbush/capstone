@@ -26,7 +26,7 @@ export default class ContactPage extends Component {
       <div className="form-group">
       <label>Email Content</label>
       <textarea className="form-control" rows="12"></textarea>
-      <div className="btn btn-primary mt-2">Send</div>
+      <div className="btn btn-info mt-2">Send</div>
       </div>  
       </form>
 
