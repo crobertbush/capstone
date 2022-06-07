@@ -26,13 +26,13 @@ export default class ContactPage extends Component {
       <div className="form-group">
       <label>Email Content</label>
       <textarea className="form-control" rows="12"></textarea>
-      <div className="btn btn-info mt-2">Send</div>
+      <div className="btn btn-dark mt-2">Send</div>
       </div>  
       </form>
 
 
       <div>
-        <h2 style={styles.number}>Telephone: (513)555-5555</h2>
+        <h2 style={styles.number}>Telephone: (555)555-5555</h2>
       </div>
       
   </div> 

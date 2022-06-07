@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { name } from 'ejs';
 
 //Attractions
 const Attraction = (props) => {
@@ -11,7 +10,7 @@ const Attraction = (props) => {
           <img className="card-img-top" style={cardStyles.image} src={props.attraction.imageUrl} alt="img" />
           <div className="card-title" style={cardStyles.title}>{props.attraction.name}</div>
           <p className="card-body" style={cardStyles.p}>{props.attraction.description}</p>
-          <a className="btn btn-info" href={props.attraction.website}>Visit Website</a>
+          <a className="btn btn-dark" href={props.attraction.website}>Visit Website</a>
         </div>
       
     
