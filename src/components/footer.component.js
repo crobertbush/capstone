@@ -4,7 +4,8 @@ import React, { Component } from 'react';
 const Footers  = () => {
     return(
         <footer className='text-center' color='white' bgColor='dark'>
-
+            
+            <h4 className='mb-3'>Contributors</h4>
                   
              <div className='d-inline-block col-md-4 col-sm-4'>
                <h5 className='text-uppercase'>Kam</h5>
