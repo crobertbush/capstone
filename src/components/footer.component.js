@@ -5,10 +5,10 @@ const Footers  = () => {
     return(
         <footer className='text-center' color='white' bgColor='dark'>
             
-            <h4 className='mb-3'>Contributors</h4>
-                  
+            <h2 className='mb-3'>Contributors</h2>
+            
              <div className='d-inline-block col-md-4 col-sm-4'>
-               <h5 className='text-uppercase'>Kam</h5>
+               <h5 className='text-uppercase'>Kameron Scott</h5>
                <ul className='list-unstyled mb-0'>
                  <li>
                    <a href='https://www.linkedin.com/in/kameron-scott-148a73202' className='text-white'>
@@ -29,7 +29,7 @@ const Footers  = () => {
              </div>
 
              <div className='d-inline-block col-md-4 col-sm-4'>
-               <h5 className='text-uppercase'>Lashawn</h5>
+               <h5 className='text-uppercase'>Lashawn Wood</h5>
                <ul className='list-unstyled mb-0'>
                  <li>
                    <a href='https://www.linkedin.com/in/lashawn-wood/' className='text-white'>
@@ -50,7 +50,7 @@ const Footers  = () => {
              </div>
 
              <div className='d-inline-block col-md-4 col-sm-4'>
-               <h5 className='text-uppercase'>Robby</h5>
+               <h5 className='text-uppercase'>Robby Bush</h5>
                <ul className='list-unstyled mb-0'>
                  <li>
                   <a href='https://www.linkedin.com/in/robby-bush-50622b236/' className='text-white'>
