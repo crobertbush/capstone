@@ -7,29 +7,38 @@ export default class ContactPage extends Component {
       
   <div className="m-5">       
        
+      <div className="container">
+        
         <h1 style={styles.title}>Contact Us</h1>
       
-      <form>
-      <div className="form-group">
-      <label> Your Email Address</label>
-      <input type="email" className="form-control" placeholder="email@example.com"></input>
-      </div>
-      <div className="form-group">
-      <label>Subject</label>
-      <select className="form-control">
-          <option>Question</option>
-          <option>Suggestion</option>
-          <option>Review</option>
-      </select>                   
-      </div>
-  
-      <div className="form-group">
-      <label>Email Content</label>
-      <textarea className="form-control" rows="12"></textarea>
-      <div className="btn btn-dark mt-2">Send</div>
-      </div>  
-      </form>
+        <form>
 
+          <div className="form-group">
+            <label> Your Email Address</label>
+            <input type="email" className="form-control" placeholder="email@example.com"></input>
+          </div>
+          
+          <div className="form-group">
+            <label>Subject</label>
+            <select className="form-control">
+
+              <option>Question</option>
+              <option>Suggestion</option>
+              <option>Review</option>
+
+            </select>
+
+          </div>
+  
+          <div className="form-group">
+            <label>Email Content</label>
+            <textarea className="form-control" rows="12"></textarea>
+            <div className="btn btn-dark mt-2">Send</div>
+          </div> 
+
+        </form>
+      
+      </div>
 
       <div>
         <h2 style={styles.number}>Telephone: (555)555-5555</h2>
@@ -47,6 +56,7 @@ const styles = {
   },
   title: {
     textAlign: "center",
-    marginBottom: "1em"
+    marginBottom: "1em",
+    color: "white"
   }
 }
