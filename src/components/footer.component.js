@@ -31,17 +31,17 @@ const Footers  = () => {
                <h5 className='text-uppercase'>Lashawn</h5>
                <ul className='list-unstyled mb-0'>
                  <li>
-                   <a href='/' className='text-white'>
+                   <a href='https://www.linkedin.com/in/lashawn-wood/' className='text-white'>
                      Linkedin
                    </a>
                  </li>
                  <li>
-                   <a href='/' className='text-white'>
+                   <a href='https://lashawn24.github.io/My-Portfolio/' className='text-white'>
                      Portfolio
                    </a>
                 </li>
                  <li>
-                   <a href='/' className='text-white'>
+                   <a href='https://github.com/Lashawn24?tab=repositories' className='text-white'>
                      Github
                    </a>
                  </li>
@@ -52,7 +52,7 @@ const Footers  = () => {
                <h5 className='text-uppercase'>Robby</h5>
                <ul className='list-unstyled mb-0'>
                  <li>
-                  <a href='https://www.linkedin.com/in/robby-bush-50622b236?trk' className='text-white'>
+                  <a href='https://www.linkedin.com/in/robby-bush-50622b236/' className='text-white'>
                      Linkedin
                    </a>
                  </li>
