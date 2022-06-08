@@ -5,9 +5,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightcoral !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.history{
+  margin:0 !important;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size:  20px;
+}
+
+h1 {
+  background-color: lightcoral;
+}
+
+p {
+  background-color: lightcoral;
+}
+
+.footer {
+  position: auto;
+  left: 20;
+  bottom: 50;
+  height: 500;
+  width: 300%;
+  background-color: gray;
+  color: black;
+  text-align: right;
 }
