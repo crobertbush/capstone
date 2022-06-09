@@ -21,10 +21,9 @@ const Attraction = (props) => {
 const cardStyles = {
 
   container: {
-    border: "transparent",
+    border: "transparent, 1px",
     maxWidth: "40em",
     backgroundColor: "white",
-    border: "1px",
     borderColor: "black",
     boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)"
   },
