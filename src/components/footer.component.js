@@ -7,7 +7,7 @@ const Footers  = () => {
             
             <h2 className='mb-3'>Contributors</h2>
             
-             <div className='d-inline-block col-md-4 col-sm-4'>
+             <div className='d-inline-block col-md-4 col-sm-12 col-xs-12'>
                <h5 className=''>Kameron Scott</h5>
                <ul className='list-unstyled mb-0'>
                  <li>
@@ -28,7 +28,7 @@ const Footers  = () => {
                </ul>
              </div>
 
-             <div className='d-inline-block col-md-4 col-sm-4'>
+             <div className='d-inline-block col-md-4 col-sm-12 col-xs-12'>
                <h5 className=''>Lashawn Wood</h5>
                <ul className='list-unstyled mb-0'>
                  <li>
@@ -49,7 +49,7 @@ const Footers  = () => {
                </ul>
              </div>
 
-             <div className='d-inline-block col-md-4 col-sm-4'>
+             <div className='d-inline-block col-md-4 col-sm-12 col-xs-12'>
                <h5 className=''>Robby Bush</h5>
                <ul className='list-unstyled mb-0'>
                  <li>
@@ -84,9 +84,9 @@ export default class Footer extends Component {
     render(){
         return (
     <footer>
-    <div className="container-fluid p-2" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+    <div className=" p-2" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         <div className="row mb-0">
-                <div className="flex flex-wrap p-2"><Footers/></div>
+                <div className="p-2"><Footers/></div>
         </div>
     </div>
 
