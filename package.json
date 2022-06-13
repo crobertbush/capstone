@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/crobertbush/capstone#readme",
   "dependencies": {
+    "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
     "type-fest": "^0.21.3"
   }
