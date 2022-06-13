@@ -22,7 +22,7 @@ const cardStyles = {
 
   container: {
     border: "transparent, 1px",
-    maxWidth: "40em",
+    maxWidth: "30em",
     backgroundColor: "white",
     borderColor: "black",
     boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",

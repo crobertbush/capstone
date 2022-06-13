@@ -71,7 +71,7 @@ export default class ContactPage extends Component {
             <textarea className="form-control" rows="12" name="body" value={this.state.body} onChange={this.onChangeBody} required></textarea>
           </div> 
           
-          <input className="btn btn-dark mt-2" type='submit' value='send' />
+          <input className="btn btn-dark mt-2" type='submit' value='Send' />
         
         </form>
       
