@@ -26,7 +26,7 @@ connection.once('open', () => {
 
 
 const attractionsRouter = require('./routes/attractions');
-    const emailRouter = require('./routes/email')
+const emailRouter = require('./routes/email');
     app.use('/attractions', attractionsRouter);
     app.use('/emails', emailRouter);
 
