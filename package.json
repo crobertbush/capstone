@@ -1,44 +1,26 @@
 {
   "name": "capstone",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-
-    "axios": "^0.27.2",
-    "body-parser": "^1.20.0",
-    "bootstrap": "^5.1.3",
-    "concurrently": "^7.2.1",
-    "ip": "^1.1.8",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.4.0",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.3.3",
-    "react-scripts": "^4.0.3",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "concurrently \"npm start\" \"cd backend && nodemon server\""
+    "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crobertbush/capstone.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crobertbush/capstone/issues"
+  },
+  "homepage": "https://github.com/crobertbush/capstone#readme",
+  "dependencies": {
+    "react-scripts": "^4.0.3"
   }
 }
