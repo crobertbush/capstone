@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let Email = require('../models/Email.model');
+let Email = require('../models/email.model');
 
 
 router.route('/').get((req, res) => {
