@@ -24,6 +24,10 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
 
 const attractionsRouter = require('./routes/attractions');
 const emailRouter = require('./routes/email');
